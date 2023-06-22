@@ -1,0 +1,89 @@
+.section2 {
+
+  .section2-header {
+    background: #2a2a2a;
+    height: 50vh;
+
+    .section2-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 200px;
+
+      h3 {
+        @include title2;
+      }
+    }
+
+    .section2-links {
+
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+        width: 55%;
+        margin: 0 auto;
+
+        a {
+          border-bottom: 1px solid #fff;
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+
+  .section2-main {
+    background: url(../img/bg-menu-01.jpg) center/cover;
+    height: 80vh;
+    position: relative;
+
+    .s2-dishes {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      width: 52%;
+      margin: 0 auto;
+      background: #fff;
+      position: absolute;
+      bottom: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 80vh;
+      padding: 20px;
+
+      .dish-item {
+        display: grid;
+        grid-template-columns: 25% 60% 15%;
+        padding: 20px;
+        border-bottom: 1px dashed #000;
+        margin: 10px;
+
+        img {
+          border: 1px solid #fff;
+          border-radius: 50%;
+          width: 100%;
+          margin: 0 auto;
+        }
+
+        h4 {
+          text-transform: uppercase;
+          margin-top: 20px;
+        }
+
+        p {
+          text-transform: capitalize;
+        }
+
+        h4, p {
+          font-size: 0.8rem;
+          padding-left: 10px;
+        }
+
+        .dish-price {
+          margin-top: 30px;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+

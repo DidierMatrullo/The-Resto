@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "allura";
+  src: url("../fonts/Allura-Regular.ttf");
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/Poppins-Medium.ttf");
+}
+
+$font-allura: "allura", sans-serif;
+$font-roboto: "roboto", sans-serif;
+$font-poppins: "poppins", sans-serif;
+
+$white1: #fff;
+$white2: #ededed;
+$gold: #c1934e;
+
+@mixin title {
+  color: $white1;
+  font-family: $font-allura;
+  font-size: 2rem;
+}
+
+@mixin title2 {
+  font-family: $font-allura;
+  font-size: 1.5rem;
+  color: $gold;
+}
+
+body {
+  font-family: $font-roboto;
+  background: $white2;
+  max-width: 1500px;
+}
+
+a {
+  text-decoration: none;
+  color: $white1;
+}
