@@ -13,7 +13,7 @@ header {
     margin: 0 auto;
 
     h2 {
-     @include title;
+      @include title;
     }
 
     ul {
@@ -79,7 +79,7 @@ header {
     p {
       color: $white1;
       text-transform: uppercase;
-      letter-spacing: 4px;
+      letter-spacing: 5px;
       font-size: 0.8rem;
     }
   }
