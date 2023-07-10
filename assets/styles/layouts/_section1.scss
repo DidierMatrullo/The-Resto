@@ -1,7 +1,7 @@
 .section1 {
   display: grid;
   grid-template-columns: 50% 50%;
-  background: $white1;
+  background: $white2;
 
 
   .left-content {
@@ -33,6 +33,7 @@
     .left-part-text {
       margin: 0 auto;
       padding: 10px;
+      color: #000;
     }
 
     .left-part-foo {
@@ -42,7 +43,6 @@
 
       h4 {
         font-size: 1.5rem;
-
       }
 
       p {
