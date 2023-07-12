@@ -6,15 +6,17 @@ footer {
     display: grid;
     grid-template-columns: 50% 50%;
     width: 70%;
-    margin: 40px auto;
+    margin: 0 auto;
 
     .footer-left-content {
+      padding: 50px 0 50px;
 
       h3 {
         @include title2;
         text-transform: capitalize;
         letter-spacing: 2px;
         padding-bottom: 20px;
+        font-size: 1.8rem;
       }
 
       p {
@@ -24,6 +26,7 @@ footer {
     }
 
     .footer-right-content {
+      padding-top: 50px;
 
       .newsletter {
         display: flex;
@@ -47,7 +50,7 @@ footer {
         }
       }
 
-      .social {
+      .social-networks {
         color: $white1;
         padding-left: 20px;
         display: flex;

@@ -1,5 +1,5 @@
 header {
-  background: url(../img/bg-slider-06.jpg) center/cover fixed;
+  background: url(../img/bg-slider-06.jpg) center/cover;
   height: 85vh;
   z-index: 10;
   position: relative;
@@ -81,6 +81,23 @@ header {
       text-transform: uppercase;
       letter-spacing: 5px;
       font-size: 0.8rem;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    nav {
+
+      .left-nav {
+        display: none;
+      }
+
+      .right-nav {
+        width: 50%;
+
+        ul {
+          -webkit-justify-content: space-around;
+        }
+      }
     }
   }
 }

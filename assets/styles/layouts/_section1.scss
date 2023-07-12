@@ -3,6 +3,9 @@
   grid-template-columns: 50% 50%;
   background: $white2;
 
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
 
   .left-content {
     text-align: center;
@@ -12,6 +15,14 @@
     align-items: center;
     border: 1px dashed $gold;
     margin: 20px;
+
+    @media screen and (max-width: 600px) {
+      .left-content {
+        justify-content: space-between;
+        margin: 20px 0;
+      }
+    }
+
 
     .left-part-title {
 
@@ -24,9 +35,19 @@
       h4 {
         text-transform: uppercase;
         font-family: $font-poppins;
-        line-height: 0.25rem;
+        line-height: 0.30rem;
         font-size: 2rem;
         padding-bottom: 10px;
+      }
+
+      @media screen and (max-width: 600px) {
+        h3 {
+          font-size: 2rem;
+        }
+        h4 {
+          font-size: 1.2rem;
+          padding-bottom: 40px;
+        }
       }
     }
 
@@ -34,6 +55,11 @@
       margin: 0 auto;
       padding: 10px;
       color: #000;
+
+      @media screen and (max-width: 600px) {
+        padding: 40px;
+        text-align: justify;
+      }
     }
 
     .left-part-foo {
@@ -49,6 +75,21 @@
         text-transform: uppercase;
         margin-bottom: 20px;
       }
+
+      @media screen and (max-width: 600px) {
+        img {
+          height: 80px;
+          width: 80px;
+          padding-bottom: 10px;
+        }
+        h4 {
+          font-size: 1rem;
+        }
+        p {
+          font-size: 0.7rem;
+
+        }
+      }
     }
   }
 
@@ -56,6 +97,10 @@
     img {
       width: 100%;
       height: 100%;
+    }
+
+    @media screen and (max-width: 600px) {
+      display: none;
     }
   }
 }
