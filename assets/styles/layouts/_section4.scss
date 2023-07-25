@@ -1,4 +1,8 @@
 .section4 {
+  position: relative;
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 
   .s4-header {
     display: flex;

@@ -1,59 +1,110 @@
 .section5 {
+  margin: 0 auto;
+  width: 100%;
+
   .s5-container {
     color: $white1;
     text-align: center;
     background: url(../img/gmap.jpg) center/cover;
     margin: 0 auto;
     height: 500px;
+    width: 100%;
+
+    @media screen and (max-width: 600px) {
+      width: 100%;
+
+    }
 
     .s5-img {
 
       img {
         clip-path: circle(50% at center);
         margin-bottom: 20px;
+
+        @media screen and (max-width: 600px) {
+          width: 60px;
+          height: 60px;
+        }
       }
     }
 
     .s5-content {
       background: $white2;
-      width: 70%;
+      width: 60%;
       margin: 350px auto 0;
-      height: 300px;
+      height: 400px;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
       position: relative;
-      bottom: 50%;
+      bottom: 80%;
       transform: translateY(50%);
 
+      @media screen and (max-width: 600px) {
+        width: 90%;
+        display: block;
+        position: relative;
+        bottom: 400px;
+        margin: 250px auto 0;
+      }
 
       .s5_content_details {
-        position: relative;
-        bottom: 50%;
-        transform: translateY(25%);
-      }
-
-      p {
-        color: #000;
-        width: 90%;
         margin: 0 auto;
-        line-height: 2rem;
-      }
 
-      h4 {
-        color: #000;
-        font-size: 1.5rem;
-        font-weight: 100;
-      }
+        img {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 300px;
 
-      h5 {
-        color: $gold;
-        font-weight: 100;
-        padding-top: 20px;
-        font-size: 1rem;
+          @media screen and (max-width: 600px) {
+            bottom: 350px;
+          }
+        }
+
+        .s5-main-content {
+          padding: 100px 0;
+          margin: 0 auto;
+
+          @media screen and (max-width: 600px) {
+            padding: 50px 0 30px;
+            width: 70%;
+          }
+
+          p {
+            color: #000;
+            width: 90%;
+            margin: 0 auto;
+            line-height: 2rem;
+
+            @media screen and (max-width: 600px) {
+              font-size: 0.8rem;
+              line-height: 1.5rem;
+            }
+          }
+        }
+
+        .s5-foo-content {
+
+          h4 {
+            color: #000;
+            font-size: 1.5rem;
+            font-weight: 100;
+          }
+
+          h5 {
+            color: $gold;
+            font-weight: 100;
+            padding-top: 20px;
+            font-size: 1rem;
+
+            @media screen and (max-width: 600px) {
+              padding-top: 10px;
+            }
+          }
+        }
       }
     }
   }
-
 }

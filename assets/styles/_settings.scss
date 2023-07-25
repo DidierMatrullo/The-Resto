@@ -25,7 +25,7 @@ $font-poppins: "poppins", sans-serif;
 
 $white1: #fff;
 $white2: #ededed;
-$gold: #d7a962;
+$gold: #e3af5b;
 
 @mixin title {
   color: $white1;
@@ -43,7 +43,6 @@ $gold: #d7a962;
 body {
   font-family: $font-roboto;
   background: #1f1a14;
-  max-width: 1500px;
 }
 
 a {

@@ -1,6 +1,7 @@
 header {
   background: url(../img/bg-slider-06.jpg) center/cover;
   height: 85vh;
+  width: 100%;
   z-index: 10;
   position: relative;
 
@@ -33,6 +34,10 @@ header {
           color: $gold;
         }
       }
+
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
     }
 
     .right-nav {
@@ -45,7 +50,12 @@ header {
           transform: scale(1.5);
         }
       }
+
+      @media screen and (max-width: 600px) {
+        width: 50%;
+      }
     }
+
   }
 
   .header-title {
@@ -55,12 +65,20 @@ header {
     transform: translateX(-50%);
     text-align: center;
 
+    @media screen and (max-width: 600px) {
+      top: 30%;
+    }
+
     h1 {
       font-family: $font-allura;
       color: $gold;
       font-weight: 100;
       font-size: 3rem;
       line-height: 0.5rem;
+
+      @media screen and (max-width: 600px) {
+        font-size: 1.7rem;
+      }
     }
 
     h2 {
@@ -69,6 +87,13 @@ header {
       letter-spacing: 14px;
       font-family: $font-poppins;
       font-size: 3rem;
+
+      @media screen and (max-width: 600px) {
+        font-size: 2rem;
+        width: 300px;
+        padding-top: 20px;
+
+      }
     }
 
     img {
@@ -84,21 +109,6 @@ header {
     }
   }
 
-  @media screen and (max-width: 600px) {
-    nav {
 
-      .left-nav {
-        display: none;
-      }
-
-      .right-nav {
-        width: 50%;
-
-        ul {
-          -webkit-justify-content: space-around;
-        }
-      }
-    }
-  }
 }
 
